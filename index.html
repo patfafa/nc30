@@ -54,11 +54,15 @@
 
         .page-3 {
             background: #000;
+            perspective: 400px;
+            overflow: hidden;
         }
 
         .content {
             text-align: center;
             padding: 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .nc30-title, .nc30-description {
@@ -97,6 +101,7 @@
                 repeating-linear-gradient(90deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px);
             opacity: 0.3;
             animation: tvNoise 0.5s steps(10) infinite;
+            z-index: 1;
         }
 
         .tv-flicker {
@@ -108,6 +113,7 @@
             background: rgba(255,255,255,0.05);
             opacity: 0;
             animation: tvFlicker 0.5s infinite;
+            z-index: 1;
         }
 
         @keyframes tvNoise {
@@ -121,9 +127,36 @@
             100% { opacity: 0.1; }
         }
 
+        .crawl-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            transform: translateZ(-2500px) rotateX(25deg);
+        }
+
+        .crawl {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            font-size: 6rem;
+            line-height: 1.0;
+            color: #feda4a;
+            text-align: center;
+            animation: crawl 20s linear infinite;
+        }
+
+        @keyframes crawl {
+            0% { top: 100%; }
+            100% { top: -300%; }
+        }
+
         @media (max-width: 768px) {
-            .nc30-title, .nc30-description {
-                font-size: 3rem;
+            .nc30-title, .nc30-description, .crawl {
+                font-size: 2rem;
             }
         }
     </style>
@@ -146,9 +179,24 @@
     <div class="page page-3">
         <div class="tv-effect"></div>
         <div class="tv-flicker"></div>
+        <div class="crawl-container">
+            <div class="crawl">
+                <p>Simon Prey is a successful Berlin record</p>
+                <p>executive with a hot Swedish husband</p>
+                <p>and an adorable child.</p>
+                <p><br><br></p>
+                <p>Simon is a recovering meth addict.</p>
+                <p>Simon is currently addicted</p>
+                <p>to a gay cannibal porn site</p>
+                <p>called <b><i>MORTAL ROAST.</i></b></p>
+                <p><br><br></p>
+                <p>This is the story of how Simon</p>
+                <p>volunteers to be eaten.</p>
+            </div>
+        </div>
         <div class="content">
-            <p class="nc30-title">Distorted Reality</p>
-            <p class="nc30-description">Enter at your own risk</p>
+            <p class="nc30-title">MORTAL</p>
+            <p class="nc30-title">ROAST</p>
         </div>
     </div>
 </body>
