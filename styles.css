@@ -1,4 +1,3 @@
-/* styles.css */
 body, html {
     margin: 0;
     padding: 0;
@@ -20,7 +19,24 @@ body, html {
 
 .page-1 {
     background: linear-gradient(135deg, #3b1c1c, #5e2a2a);
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #5e2a2a, 0 0 0.2em #ffffff;
 }
+
+.nc30-title {
+    font-size: 6rem; /* Larger font size */
+    margin-bottom: 30px;
+    color: #fff5f5;
+    text-shadow: 1px 1px 2px #000000, 0 0 10px #ff9999, 0 0 5px #ff6666; 
+}
+
+.nc30-description {
+    font-size: 4rem; /* Larger font size */
+    font-style: italic;
+    line-height: 1.5;
+    color: #ddd1d1;
+    text-shadow: 1px 1px 2px #000000, 0 0 10px #ff9999, 0 0 5px #ff6666; 
+}
+
 
 .page-2 {
     background: linear-gradient(135deg, #e6e6e6, #f7f7f7);
@@ -32,13 +48,13 @@ body, html {
 }
 
 .nc30-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 6rem; 
+    margin-bottom: 30px; 
     color: #fff5f5;
 }
 
 .nc30-description {
-    font-size: 2rem;
+    font-size: 4rem; 
     font-style: italic;
     line-height: 1.5;
     color: #ddd1d1;
@@ -52,14 +68,4 @@ body, html {
 .page-2 .nc30-description {
     color: #ff3333;
     text-shadow: 2px 2px 6px #000000;
-}
-
-/* Scroll snapping */
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-body {
-    scroll-snap-align: start;
 }
