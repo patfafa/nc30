@@ -1,0 +1,65 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Garamond', serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.page-1 {
+    background: linear-gradient(135deg, #3b1c1c, #5e2a2a);
+}
+
+.page-2 {
+    background: linear-gradient(135deg, #e6e6e6, #f7f7f7);
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.nc30-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff5f5;
+}
+
+.nc30-description {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #ddd1d1;
+}
+
+.page-2 .nc30-title, .page-2 .nc30-description {
+    color: #ff6666;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.page-2 .nc30-description {
+    color: #ff3333;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+/* Scroll snapping */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    scroll-snap-align: start;
+}
