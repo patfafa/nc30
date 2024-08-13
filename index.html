@@ -57,6 +57,22 @@
             perspective: 400px;
             overflow: hidden;
         }
+        .page-4, .page-5 {
+            background: linear-gradient(135deg, #000022, #220022);
+        }
+
+        .thrilling-text {
+            font-size: 2.5rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            opacity: 0;
+            animation: fadeInOut 8s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
 
         .content {
             text-align: center;
@@ -197,6 +213,39 @@
         <div class="content">
             <p class="nc30-title">MORTAL</p>
             <p class="nc30-title">ROAST</p>
+        </div>
+    <div class="page page-4">
+        <div class="tv-effect"></div>
+        <div class="tv-flicker"></div>
+        <div class="content">
+            <p class="nc30-title">TON, 42, is the CEO of the family firm </p>
+            <p class="nc30-description">YOUTHGROUP</p>
+        </div>
+        <div class="crawl-container">
+            <div class="crawl">
+                <p class="thrilling-text">Trust no one</p>
+                <p class="thrilling-text">Your mind is the key</p>
+                <p class="thrilling-text">Unravel the truth</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-5">
+        <div class="tv-effect"></div>
+        <div class="tv-flicker"></div>
+        <div class="content">
+            <p class="nc30-title">The Echoes Within</p>
+            <p class="nc30-description">A psychological journey</p>
+        </div>
+        <div class="crawl-container">
+            <div class="crawl">
+                <p>Coming to theaters Fall 2024</p>
+                <p>Directed by A. Visionary</p>
+                <p>Produced by Introspect Films</p>
+                <p>"Memories lie"</p>
+                <p>"Perceptions deceive"</p>
+                <p>"Truth hides in the shadows of the mind"</p>
+            </div>
         </div>
     </div>
 </body>
